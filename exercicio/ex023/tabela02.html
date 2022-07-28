@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        td , th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        thead {
+            background-color: gray;
+            color: white;
+        }
+        tfoot {
+            background-color: gray;
+            color: white;
+        
+        } 
+        thead > tr > th  {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+        tbody > tr:nth-child(2n-1) {
+                background-color: rgba(27, 32, 32, 0.219);
+            }
+            td.num {
+                text-align: right;
+            }
+            caption {
+                font-size: 1.5em;
+                font-weight: bold;
+                
+                padding: 10px;
+                background-color: rgba(39, 46, 49, 0.123);
+            }
+           
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+<table>
+    <caption> Populuçao das unidades federativas </caption>
+    <thead>
+<tr>
+    <th scope="col">Estado</th>
+    <th scope="col" style="width: 50px;">Populaçao</th>
+</tr>
+    </thead>
+    <tr>
+        <td>Minas Gerais </td>
+        <td class="num"> 231 8797 </td>
+    </tr>
+    <tr>
+        <td> Rio de janeiro</td>
+        <td class="num"> 879 798 2</td>
+    </tr>
+    <tr>
+        <td> Bahia </td>
+        <td class="num"> 14 440 54</td>
+    </tr>
+    <tr>
+        <td> Parana</td>
+        <td class="num"> 975 654 65</td>
+    </tr>
+    <tr> 
+        <td> Rio grande</td>
+        <td class="num "> 106 546 4 
+    </tr>
+    <tr>
+        <td> Pernambuco 
+        </td>
+        <td class="num"> 4165 64 6</td>
+    </tr>
+    <tr>
+        <td> Ceara </td>
+        <td class="num"> 635 654 65</td>
+    </tr>
+    <tr>
+        <td> Goias </td>
+        <td class="num"> 546 564 </td>
+    </tr>
+    <tr>
+        <td> Maranhao</td>
+        <td class="num">5 798 65</td>
+    </tr>
+    <tr>
+        <td>Amazonas </td>
+        <td class="num"> 64 54 654</td>
+    </tr>
+    <tr>
+        <td>
+            Espirito santo
+        </td>
+        <td class="num"> 65 65 65</td>
+    </tr>
+    <tr>
+        <td> Paraiba</td>
+        <td class="num"> 654 5648 6</td>
+    </tr>
+    <tr>
+        <td> Mato grosso</td>
+        <td class="num"> 654 54 645 </td>
+    </tr>
+    <td> Rio Grande </td>
+    <td class="num"> 5241 45 5</td>
+    <tbody>
+<tr>
+    <td>Sao Paulo</td>
+    <td class="num"> 45 982 789</td>
+</tr>
+    </tbody>
+    <tfoot>
+    <th scope="row"> Total de habitantes </th>
+    <td><strong> 654.9856.598</strong></td>
+    </tfoot>
+</table>
+
+
+</body>
+</html>
